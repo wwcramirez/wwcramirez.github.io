@@ -7,32 +7,15 @@
                 </div>
                 <div class="panel-body">
                     <form role="form" class="mb-lg ng-pristine ng-valid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group has-feedback mb">
-                                    <input id="exampleInputEmail1" type="email" placeholder="Su email" autocomplete="off" class="form-control">
-                                    <span class="fa fa-envelope form-control-feedback text-muted"></span>
-                                </div>
-                                <br>
-                                <div class="form-group has-feedback">
-                                    <input id="exampleInputPassword1" type="password" placeholder="Su contrase&ntilde;a" class="form-control">
-                                    <span class="fa fa-lock form-control-feedback text-muted"></span>
-                                </div>
-                                <div class="checkbox c-checkbox pull-left mt0">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        <span class="fa fa-check"></span>Recuerda mis credenciales
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <button type="submit" class="btn btn-block btn-info mb" ui-sref="app.dashboard">Iniciar sesi&oacute;n</button>
-                                <p class="text-muted mb0">¿No tienes cuenta?</p>
-                                <a ui-sref="page.register" class="btn btn-block btn-default" href="#/page/register">
-                                    <strong>Reg&iacute;strese</strong>
-                                </a>
-                            </div>
+                        <div class="form-group">
+                            <label class="control-label"><i class="fa fa-user" style="margin-right: 5px;"></i>Nombre de usuario</label>
+                            <input type="text" placeholder="Nombre de usuario" class="form-control" />
                         </div>
+                        <div class="form-group">
+                            <label class="control-label"><i class="fa fa-lock" style="margin-right: 5px;"></i>Contrase&ntilde;a</label>
+                            <input type="password" placeholder="Contrase&ntilde;a" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-default" style="float: right;">Iniciar sesi&oacute;n</button>
                     </form>
                 </div>
             </div>

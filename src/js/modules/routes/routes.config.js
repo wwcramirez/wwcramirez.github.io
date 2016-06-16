@@ -16,7 +16,7 @@
       $locationProvider.html5Mode(false);
 
       // Default route
-      $urlRouterProvider.otherwise('/app/login');
+      $urlRouterProvider.otherwise('/app/dashboard');
 
       // Application Routes States
       $stateProvider

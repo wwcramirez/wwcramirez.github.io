@@ -2,7 +2,7 @@
 <nav role="navigation" ng-controller="HeaderNavController as header" class="navbar topnavbar">
    
    <!-- START navbar header-->
-   <div class="navbar-header">
+   <div id="logo" class="navbar-header">
       <a ui-sref="app.dashboard" class="navbar-brand">
          <img src="app/img/fondo-logo.png" alt="CFSE" class="brand-logo" />
       </a>
@@ -24,8 +24,19 @@
          </li>
       </ul>
       <!-- END Left navbar-->
+      <div id="language">
+         <div id="search" class="nav navbar-nav navbar-right" style="margin-top: 15px; margin-right: 15px;">
+            <div class="search-icon">
+               <a ui-sref="app.login">
+                  <i class="icon fa fa-sign-in"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+       
    </div>
    <!-- END Nav wrapper-->
 
+  
 </nav>
 <!-- END Top Navbar-->
