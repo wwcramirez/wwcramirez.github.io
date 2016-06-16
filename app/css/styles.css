@@ -269,7 +269,6 @@ input[type="number"] {
 }
 .topnavbar > .navbar-header {
   position: relative;
-  background-color: white;
   -webkit-transition: width 0.2s ease;
   -o-transition: width 0.2s ease;
   transition: width 0.2s ease;
