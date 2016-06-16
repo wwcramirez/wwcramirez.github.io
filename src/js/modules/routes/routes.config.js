@@ -44,6 +44,11 @@
 			// controller: 'DataFormController',
 			// controllerAs: 'df'
 		})
+    .state('app.transactions', {
+      url: '/patron/transactions',
+      templateUrl: Route.base('transactions.html'),
+      resolve: {}
+    })
       // Layout dock
       .state('app-dock', {
         url: '/dock',
