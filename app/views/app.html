@@ -1,8 +1,8 @@
 <!-- top navbar-->
-<header ng-include="'app/views/templates/top-navbar.html'" ng-class="app.theme.topbar"></header>
+<header id="topheader" ng-include="'app/views/templates/top-navbar.html'"></header>
 
 <!-- Main-->
-<section>
+<section class="content">
    <!-- Content-->
    <div ui-view="" autoscroll="false" ng-class="app.views.animation" class="app"></div>
 </section>
