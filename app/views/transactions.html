@@ -1,36 +1,76 @@
 <div class="app-view-header">
-Bienvenido Username 
-<br />
-<small>Seleccione transacci&oacute;n a consultar</small>
+	Seleccione transacci&oacute;n a consultar
 </div>
 
 <div ng-controller="PatronController as dashboard" class="container-fluid">
    <div class="row">
    		<div class="col-md-2">
    			<uib-tabset active="false" vertical="true" type="pills">
-   				<uib-tab index="1" heading="Trans 1" select="dashboard.setCurrentView(dashboard.views.years)"></uib-tab>
-   				<uib-tab index="2" heading="Trans 2" select="dashboard.setCurrentView(dashboard.views.form)"></uib-tab>
-   				<uib-tab index="3" heading="Trans 3"></uib-tab>
+   				<uib-tab index="1" heading="Certificaci&oacute;n de deuda" classes="bg-cfse-light-tab" select="dashboard.setCurrentView(dashboard.views.years)"></uib-tab>
+   				<uib-tab index="2" heading="Creaci&oacute;n de nuevo caso" classes="bg-cfse-light-tab" select="dashboard.setCurrentView(dashboard.views.form)"></uib-tab>
+   				<uib-tab index="3" heading="Trans 3" classes="bg-cfse-light-tab"></uib-tab>
    			</uib-tabset>
    		</div>
-        <div class="col-md-2 col-md-offset-1" ng-show="dashboard.currentView === dashboard.views.years">
+        <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
         	<div class="panel panel-default">
-				<div ripple ng-click="hpanel = [false, true, false, false, false]; dashboard.download();" ng-class="{'bg-primary': hpanel[1]}" class="bb br pv-xxl clickable">
+				<div ripple ng-click="dashboard.setYear(2006); dashboard.download();" ng-class="{'bg-primary': dashboard.year === 2006}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2006</p>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">
+	    		<div ripple ng-click="dashboard.setYear(2007)" ng-class="{'bg-info': dashboard.year === 2007}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2007</p>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">     
+	        	<div ripple ng-click="dashboard.setYear(2008)" ng-class="{'bg-success': dashboard.year === 2008}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2008</p>
+	        	</div>
+	        </div>
+        </div>
+        <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">
+	    		<div ripple ng-click="dashboard.setYear(2009)" ng-class="{'bg-info': dashboard.year === 2009}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2009</p>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">     
+	        	<div ripple ng-click="dashboard.setYear(2010)" ng-class="{'bg-success': dashboard.year === 2010}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2010</p>
+	        	</div>
+	        </div>
+        </div>
+        <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">
+	    		<div ripple ng-click="dashboard.setYear(2011)" ng-class="{'bg-info': dashboard.year === 2011}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2011</p>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">     
+	        	<div ripple ng-click="dashboard.setYear(2012)" ng-class="{'bg-success': dashboard.year === 2012}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2012</p>
+	        	</div>
+	        </div>
+        </div>
+        <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
+	    	<div class="panel panel-default">
+	    		<div ripple ng-click="dashboard.setYear(2013)" ng-class="{'bg-info': dashboard.year === 2013}" class="bb br pv-xxl clickable">
 	        		<p class="text-center" style="font-size: 24px;">2013</p>
 	        	</div>
 	        </div>
 	    </div>
-	    <div class="col-md-2" ng-show="dashboard.currentView === dashboard.views.years">
-	    	<div class="panel panel-default">
-	    		<div ripple ng-click="hpanel = [false, false, true, false, false]" ng-class="{'bg-info': hpanel[2]}" class="bb br pv-xxl clickable">
-	        		<p class="text-center" style="font-size: 24px;">2014</p>
-	        	</div>
-	        </div>
-	    </div>
-	    <div class="col-md-2" ng-show="dashboard.currentView === dashboard.views.years">
+	    <div class="col-md-1" ng-show="dashboard.currentView === dashboard.views.years">
 	    	<div class="panel panel-default">     
-	        	<div ripple ng-click="hpanel = [false, false, false, true, false]" ng-class="{'bg-success': hpanel[3]}" class="bb br pv-xxl clickable">
-	        		<p class="text-center" style="font-size: 24px;">2015</p>
+	        	<div ripple ng-click="dashboard.setYear(2014)" ng-class="{'bg-success': dashboard.year === 2014}" class="bb br pv-xxl clickable">
+	        		<p class="text-center" style="font-size: 24px;">2014</p>
 	        	</div>
 	        </div>
         </div>
@@ -38,7 +78,7 @@ Bienvenido Username
         	
 			<form class="" action="index.html" method="post">
 				<uib-accordion close-others="false">
-					<uib-accordion-group is-open="dashboard.accordion.patron" panel-class="panel-info">
+					<uib-accordion-group is-open="dashboard.accordion.patron" panel-class="bg-cfse-light">
 						<uib-accordion-heading>
 							<span style="color: white;">
 								Informaci&oacute;n del Patrono <i class="pull-right glyphicon" 
@@ -108,7 +148,7 @@ Bienvenido Username
 							</div>
 						</div>
 					</uib-accordion-group>
-					<uib-accordion-group is-open="dashboard.accordion.employee" panel-class="panel-info">
+					<uib-accordion-group is-open="dashboard.accordion.employee" panel-class="bg-cfse-light">
 						<uib-accordion-heading>
 							<span style="color: white;">
 								Informaci&oacute;n del Empleado <i class="pull-right glyphicon" 
@@ -182,7 +222,7 @@ Bienvenido Username
 				<div class="form-group" style="margin-top: 5px;">
 					<div class="row">
 						<div class="col-sm-12 text-right">
-							<input type="button" name="name" value="Enviar" ripple="" class="ml btn btn-oval btn-primary">
+							<input type="button" name="name" value="Enviar" ripple="" class="ml btn btn-oval btn-primary" style="background-color: #cd7c5e; border-color: #cd7c5e;">
 						</div>
 					</div>
 				</div>

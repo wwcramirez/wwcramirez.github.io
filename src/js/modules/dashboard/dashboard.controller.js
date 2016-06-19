@@ -10,7 +10,7 @@
         .controller('DashboardController', DashboardController);
 
     function DashboardController($rootScope) {
-
+      $rootScope.showUsername = false;
       $rootScope.sessionText = 'Acceder';
       var vm = this;
 

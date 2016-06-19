@@ -1,43 +1,49 @@
 <!-- START Top Navbar-->
 <nav role="navigation" ng-controller="HeaderNavController as header" class="navbar topnavbar">
    
-   <!-- START navbar header-->
-   <div id="logo" class="navbar-header">
-      <a ui-sref="app.dashboard" class="navbar-brand">
-         <img src="app/img/fondo-logo.png" alt="CFSE" class="brand-logo" />
-      </a>
-      <!-- Mobile buttons-->
-      <div class="mobile-toggles">
-          <!-- Button to show/hide the header menu on mobile. Visible on mobile only.-->
-         <a href="" ng-click="header.toggleHeaderMenu()" class="menu-toggle hidden-material">
-            <em class="fa fa-ellipsis-v fa-fw"></em>
-         </a>
-      </div>
-   </div>
-   <!-- END navbar header-->
-   <!-- START Nav wrapper-->
-   <div uib-collapse="header.headerMenuCollapsed" class="nav-wrapper collapse navbar-collapse">
-      <!-- START Left navbar-->
-      <ul class="nav navbar-nav hidden-material">
-         <li>
-           
-         </li>
-      </ul>
-      <!-- END Left navbar-->
-      <div id="language">
-         <div id="search" class="nav navbar-nav navbar-right" style="margin-top: 15px; margin-right: 15px;">
-            <div class="search-icon">
-               <a ui-sref="app.login">
-                  <i class="icon fa fa-sign-in"></i>
+   
+         <!-- START navbar header-->
+         <div id="logo" class="navbar-header">
+            <a ui-sref="app.dashboard" class="navbar-brand">
+               <img src="app/img/fondo-logo.png" alt="CFSE" class="brand-logo" />
+            </a>
+            <!-- Mobile buttons-->
+            <div class="mobile-toggles">
+                <!-- Button to show/hide the header menu on mobile. Visible on mobile only.-->
+               <a href="" ng-click="header.toggleHeaderMenu()" class="menu-toggle hidden-material">
+                  <em class="fa fa-ellipsis-v fa-fw"></em>
                </a>
-               <span style="font-size: 20px; color: white;">{{sessionText}}</span>
             </div>
          </div>
+         <!-- END navbar header-->
+         <!-- START Nav wrapper-->
+         <div uib-collapse="header.headerMenuCollapsed" class="nav-wrapper collapse navbar-collapse">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav hidden-material">
+               <li>
+                 
+               </li>
+            </ul>
+            <!-- END Left navbar-->
+            <div id="language">
+               <div id="search" class="nav navbar-nav navbar-right" style="margin-top: 15px; margin-right: 15px;">
+                  <div class="search-icon">
+                     <a ui-sref="app.login">
+                        <i class="icon fa fa-sign-in"></i>
+                     </a>
+                     <span style="font-size: 20px; color: white;">{{sessionText}}</span>
+                  </div>
+               </div>
+            </div>
+             
+         </div>
+         <!-- END Nav wrapper-->
+   
+   <div ng-show="showUsername" class="row" style="color: white; font-size: 18px;">
+      <div class="col-md-2 col-md-offset-10">
+         Bienvenido Username, San Juan 
       </div>
-       
    </div>
-   <!-- END Nav wrapper-->
-
   
 </nav>
 <!-- END Top Navbar-->

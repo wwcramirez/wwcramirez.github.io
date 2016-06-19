@@ -10,9 +10,12 @@
         .controller('PatronController', PatronController);
 
     function PatronController($rootScope) {
+      $rootScope.showUsername = true;
       $rootScope.sessionText = 'Salir';
 
       var vm = this;
+
+      vm.year = 0;
 
       //vm.title = 'Naut - Bootstrap + AngularJS (Seed Project)';
       vm.text = 'This project is an application skeleton for a typical AngularJS web app. You can use it to quickly bootstrap your angular webapp projects and dev environment for these projects.' +
@@ -35,9 +38,13 @@
         vm.currentView = view;
       };
 
+      vm.setYear = function (year) {
+        vm.year = year;
+      }
+
       vm.accordion = {
-        patron: true,
-        employee: true
+        patron: false,
+        employee: false
       };
     }
 
