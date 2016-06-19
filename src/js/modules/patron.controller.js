@@ -1,5 +1,5 @@
 /**=========================================================
- * Module: DashboardController.js
+ * Module: PatrongController.js
  =========================================================*/
 
 (function() {
@@ -7,11 +7,11 @@
 
     angular
         .module('naut')
-        .controller('DashboardController', DashboardController);
+        .controller('PatronController', PatronController);
 
-    function DashboardController($rootScope) {
+    function PatronController($rootScope) {
+      $rootScope.sessionText = 'Salir';
 
-      $rootScope.sessionText = 'Acceder';
       var vm = this;
 
       //vm.title = 'Naut - Bootstrap + AngularJS (Seed Project)';
