@@ -11,24 +11,6 @@
 /**
    Component: bootstrap-reset.less
 */
-
-.bg-cfse-light {
-  background-color: #cd7c5e;
-}
-
-.nav-pills > li.bg-cfse-light-tab.active > a, .nav-pills > li.bg-cfse-light-tab.active > a:hover, .nav-pills > li.bg-cfse-light-tab.active > a:focus {
-  background-color: #cd7c5e;
-}
-
-.nav-link {
-  color: #6D6D6D;
-}
-
-.nav-link:hover {
-  color: #6D6D6D;
-  text-decoration: underline;
-}
-
 @import url(//fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,400);
 .glyphicon {
   display: inline-block;
@@ -439,7 +421,7 @@ body {
   top: 70px;
   left: 0;
   bottom: 0;
-  width: 40px;
+  width: 240px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 2px 4px 8px rgba(0, 0, 0, 0.28);
   z-index: 310;
   -webkit-transition: all 0.35s ease 0s;
@@ -477,7 +459,7 @@ body {
 @media only screen and (min-width: 768px) {
   .app-container > section,
   .app-container > footer {
-    margin-left: 40px;
+    margin-left: 240px;
   }
 }
 .app {
@@ -532,7 +514,7 @@ body {
   margin-left: 0;
 }
 .aside-offscreen .app-container > aside {
-  margin-left: -40px;
+  margin-left: -240px;
 }
 .csstransforms3d .app-container {
   -webkit-backface-visibility: hidden;
@@ -550,8 +532,8 @@ body {
   transition: transform 0.35s;
 }
 .csstransforms3d .aside-offscreen .app-container > aside {
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0);
+  -webkit-transform: translate3d(-240px, 0, 0);
+  transform: translate3d(-240px, 0, 0);
 }
 .layout-fixed .app-container > aside,
 .layout-fixed .app-container > header {
@@ -611,7 +593,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .app-fh {
-    left: 40px;
+    left: 240px;
   }
 }
 .aside-offscreen .app-fh,
@@ -733,7 +715,7 @@ body {
     padding-top: 0;
     top: 0;
     right: 100px;
-    left: 40px;
+    left: 240px;
     margin-top: 50px;
     margin-left: 0;
     max-width: none;
@@ -775,7 +757,7 @@ body {
     transition: all 0.35s ease 0s;
   }
   .aside-mini .app-container > aside:hover {
-    width: 40px;
+    width: 240px;
   }
   .aside-mini .app-fh {
     left: 0;
@@ -1008,8 +990,8 @@ body {
   left: 102px;
 }
 .csstransforms3d .aside-right.aside-offscreen .app-container > aside {
-  -webkit-transform: translate3d(40px, 0, 0);
-  transform: translate3d(40px, 0, 0);
+  -webkit-transform: translate3d(240px, 0, 0);
+  transform: translate3d(240px, 0, 0);
 }
 .csstransforms3d .aside-right.aside-offscreen .app-container > section {
   margin-right: 0;

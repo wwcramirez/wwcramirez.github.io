@@ -16,14 +16,19 @@
             </div>
          </div>
          <!-- END navbar header-->
+
          <!-- START Nav wrapper-->
          <div uib-collapse="header.headerMenuCollapsed" class="nav-wrapper collapse navbar-collapse">
             <!-- START Left navbar-->
             <ul class="nav navbar-nav hidden-material">
                <li>
-                 
+                 <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                  <a href="" ng-click="app.sidebar.isOffscreen = !app.sidebar.isOffscreen" class="hidden-xs">
+                     <em ng-class="app.sidebar.isOffscreen ? 'fa-caret-right':'fa-caret-left'" class="fa"></em>
+                  </a>
                </li>
             </ul>
+            
             <!-- END Left navbar-->
             <div id="language" style="margin-top: 10px;">
                <div id="search" class="nav navbar-nav navbar-right" style="margin-top: 15px; margin-right: 15px;">
