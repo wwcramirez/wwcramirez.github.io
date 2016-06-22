@@ -421,7 +421,7 @@ body {
   top: 70px;
   left: 0;
   bottom: 0;
-  width: 240px;
+  width: 280px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 2px 4px 8px rgba(0, 0, 0, 0.28);
   z-index: 310;
   -webkit-transition: all 0.35s ease 0s;
@@ -459,7 +459,7 @@ body {
 @media only screen and (min-width: 768px) {
   .app-container > section,
   .app-container > footer {
-    margin-left: 240px;
+    margin-left: 280px;
   }
 }
 .app {
@@ -514,7 +514,7 @@ body {
   margin-left: 0;
 }
 .aside-offscreen .app-container > aside {
-  margin-left: -240px;
+  margin-left: -280px;
 }
 .csstransforms3d .app-container {
   -webkit-backface-visibility: hidden;
@@ -532,8 +532,8 @@ body {
   transition: transform 0.35s;
 }
 .csstransforms3d .aside-offscreen .app-container > aside {
-  -webkit-transform: translate3d(-240px, 0, 0);
-  transform: translate3d(-240px, 0, 0);
+  -webkit-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
 }
 .layout-fixed .app-container > aside,
 .layout-fixed .app-container > header {
@@ -593,7 +593,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .app-fh {
-    left: 240px;
+    left: 280px;
   }
 }
 .aside-offscreen .app-fh,
@@ -715,7 +715,7 @@ body {
     padding-top: 0;
     top: 0;
     right: 100px;
-    left: 240px;
+    left: 280px;
     margin-top: 50px;
     margin-left: 0;
     max-width: none;
@@ -757,7 +757,7 @@ body {
     transition: all 0.35s ease 0s;
   }
   .aside-mini .app-container > aside:hover {
-    width: 240px;
+    width: 280px;
   }
   .aside-mini .app-fh {
     left: 0;
@@ -990,8 +990,8 @@ body {
   left: 102px;
 }
 .csstransforms3d .aside-right.aside-offscreen .app-container > aside {
-  -webkit-transform: translate3d(240px, 0, 0);
-  transform: translate3d(240px, 0, 0);
+  -webkit-transform: translate3d(280px, 0, 0);
+  transform: translate3d(280px, 0, 0);
 }
 .csstransforms3d .aside-right.aside-offscreen .app-container > section {
   margin-right: 0;
@@ -3885,63 +3885,63 @@ body .toast-warning {
   background-color: #fe3f03 !important;
 }
 .bg-cfse {
-  background-color: #990100 !important;
-  color: #ff7675;
+  background-color: #bd765a !important;
+  color: #fcf8f7;
 }
 .bg-cfse a {
-  color: #e07372;
+  color: #ebd6ce;
 }
 .bg-cfse a:focus,
 .bg-cfse a:hover {
-  color: #ffa4a3;
+  color: #ffffff;
 }
 .bg-cfse .nav > li > a {
-  color: #ffa4a3;
+  color: #ffffff;
 }
 .bg-cfse .nav > li.active {
-  background-color: #850100 !important;
+  background-color: #b46b4f !important;
 }
 .bg-cfse .nav > li:hover > a,
 .bg-cfse .nav > li.active > a {
-  color: #ffbdbd;
+  color: #ffffff;
 }
 .bg-cfse .nav > li:hover > a,
 .bg-cfse .nav > li.active > a {
-  background-color: #700100;
+  background-color: #aa6144;
 }
 .bg-cfse .sidebar-subnav {
-  background-color: #990100;
+  background-color: #bd765a;
 }
 .bg-cfse .sidebar-subnav > li.active > a {
   font-weight: bold;
   background-color: transparent;
 }
 .bg-cfse .navbar-form .form-control {
-  background-color: #990100;
-  color: #ff7675;
+  background-color: #bd765a;
+  color: #fcf8f7;
 }
 .bg-cfse .navbar-form .form-control::-moz-placeholder {
-  color: #ff201f;
+  color: #e3c5b9;
   opacity: 1;
 }
 .bg-cfse .navbar-form .form-control:-ms-input-placeholder {
-  color: #ff201f;
+  color: #e3c5b9;
 }
 .bg-cfse .navbar-form .form-control::-webkit-input-placeholder {
-  color: #ff201f;
+  color: #e3c5b9;
 }
 .ie9 .bg-cfse .navbar-form .form-control {
-  border-bottom: 1px solid rgba(255, 32, 31, 0.15);
+  border-bottom: 1px solid rgba(227, 197, 185, 0.15);
 }
 .bg-cfse .navbar-form .form-control-feedback,
 .bg-cfse .navbar-form .input-group-addon {
-  color: #ff201f;
+  color: #e3c5b9;
 }
 .bg-cfse .text-muted {
-  color: #ff201f;
+  color: #e3c5b9;
 }
 .bg-cfse .text-loud {
-  color: #ffa4a3;
+  color: #ffffff;
 }
 .bg-cfse small {
   color: inherit;
@@ -3952,19 +3952,19 @@ body .toast-warning {
   }
 }
 .bg-cfse .help-block {
-  color: #ff201f;
+  color: #e3c5b9;
 }
 .bg-cfse .flot-tick-label {
-  color: #ff7675;
+  color: #fcf8f7;
 }
 .bg-cfse hr {
-  border-top-color: rgba(255, 32, 31, 0.26);
+  border-top-color: rgba(227, 197, 185, 0.26);
 }
 .bg-cfse.bg-light {
-  background-color: #b80100 !important;
+  background-color: #c68870 !important;
 }
 .bg-cfse.bg-dark {
-  background-color: #7a0100 !important;
+  background-color: #b16547 !important;
 }
 .bg-cream {
   background-color: #FFFDD0 !important;
