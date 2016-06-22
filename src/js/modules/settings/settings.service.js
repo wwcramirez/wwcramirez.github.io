@@ -8,8 +8,10 @@
     angular
         .module('naut')
         .service('settings', settings);
-    /* @ngInject */
-    function settings($rootScope, $localStorage, $translate) {
+    
+    settings.$inject = ['$rootScope', '$localStorage', '$translate', '$timeout'];
+
+    function settings($rootScope, $localStorage, $translate, $timeout) {
       /*jshint validthis:true*/
       var self = this;
 
@@ -65,7 +67,25 @@
             brand:         'bg-primary',
             topbar:        'bg-primary'
           }
-        };      
+        };
+
+        $rootScope.treeCtrl = {};
+
+        $rootScope.transactions = [
+          {label: 'Certificación de Deuda'},
+          {label: 'Certificación de Sistema de Experiencia'},
+          {label: 'Certificación de Sistema de Mérito'},
+          {label: 'Certificación de Vigencia'},
+          {label: 'Declaración de Nómina'}
+        ];
+
+        var debtCert = $rootScope.transactions[0];
+        debtCert.children = [];
+
+        var policyEx = {label: 'Póliza 123456'};
+        policyEx.children = ['2008', '2009', '2010'];
+
+        debtCert.children.push(policyEx);        
       }
 
       function availableThemes() {
@@ -77,6 +97,6 @@
       }
 
     }
-    settings.$inject = ['$rootScope', '$localStorage', '$translate'];
+    
 
 })();

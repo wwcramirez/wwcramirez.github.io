@@ -21,5 +21,6 @@ angular
     'ui.utils',
     'oc.lazyLoad',
     'cfp.loadingBar',
-    'pascalprecht.translate'
+    'pascalprecht.translate',
+    'angularBootstrapNavTree'
 ]);
