@@ -16,7 +16,7 @@
       $locationProvider.html5Mode(false);
 
       // Default route
-      $urlRouterProvider.otherwise('/app/dashboard');
+      $urlRouterProvider.otherwise('/app/landing');
 
       // Application Routes States
       $stateProvider
@@ -27,6 +27,11 @@
           resolve: {
             _assets: Route.require('icons', 'toaster', 'animate')
           }
+        })
+        .state('app.landing', {
+          url: '/landing',
+          templateUrl: Route.base('landing.html'),
+          resolve: {}
         })
         .state('app.dashboard', {
           url: '/dashboard',

@@ -51,7 +51,7 @@
             isDocked: false
           },
           sidebar: {
-            isOffscreen: false,
+            isOffscreen: true,
             isMini: false,
             isRight: false
           },
